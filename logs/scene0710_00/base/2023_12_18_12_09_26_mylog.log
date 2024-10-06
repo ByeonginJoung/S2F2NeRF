@@ -1,0 +1,479 @@
+2023-12-18 12:09:26,439 - root - INFO - dataset_dir: /ssd1tb_00/byeonginjoung/dataset/ddpnerf_data/scenes
+2023-12-18 12:09:26,439 - root - INFO - name_scene: scene0710_00
+2023-12-18 12:09:26,439 - root - INFO - scene_sizes: [[-1.5, 1.8], [-1.5, 1.3], [-1.5, 1.2]]
+2023-12-18 12:09:26,439 - root - INFO - voxel_sizes: [0.011, 0.08, 0.24, 0.48]
+2023-12-18 12:09:26,439 - root - INFO - sdf_feature_dim: [8, 4, 4, 4]
+2023-12-18 12:09:26,439 - root - INFO - rgb_feature_dim: [12, 4, 4, 4]
+2023-12-18 12:09:26,439 - root - INFO - near: 0.1
+2023-12-18 12:09:26,439 - root - INFO - far: 8.0
+2023-12-18 12:09:26,439 - root - INFO - batch_size: 2048
+2023-12-18 12:09:26,439 - root - INFO - seed: 1234
+2023-12-18 12:09:26,439 - root - INFO - iterations: 10000
+2023-12-18 12:09:26,439 - root - INFO - iter_print: 100
+2023-12-18 12:09:26,439 - root - INFO - iter_viz: 500
+2023-12-18 12:09:26,439 - root - INFO - iter_eval: 500
+2023-12-18 12:09:26,439 - root - INFO - iter_save: 11000
+2023-12-18 12:09:26,439 - root - INFO - lr: {'decoder': 0.001, 'features': 0.01, 'inv_s': 0.001}
+2023-12-18 12:09:26,439 - root - INFO - rendering: {'H': 468, 'W': 624, 'flip_x': False, 'flip_y': False, 'inverse_y': False}
+2023-12-18 12:09:26,440 - root - INFO - crop: 0
+2023-12-18 12:09:26,440 - root - INFO - geometry: {'W': 128, 'D': 1, 'skips': [], 'n_freq': 4}
+2023-12-18 12:09:26,440 - root - INFO - radiance: {'W': 256, 'D': 1, 'skips': [], 'n_freq': 4}
+2023-12-18 12:09:26,440 - root - INFO - color_weight: 1.0
+2023-12-18 12:09:26,440 - root - INFO - depth_weight: 0.12
+2023-12-18 12:09:26,440 - root - INFO - normal_weight: 0.1
+2023-12-18 12:09:26,440 - root - INFO - asdf_weight: 0.2
+2023-12-18 12:09:26,440 - root - INFO - eikonal_weight: 0.15
+2023-12-18 12:09:26,440 - root - INFO - use_eikonal_only: False
+2023-12-18 12:09:26,440 - root - INFO - asdf_loss: {'growing_trunc_init_val': 8, 'growing_trunc_last_iter': 150, 'growing_trunc_last_val': 0.02}
+2023-12-18 12:09:26,440 - root - INFO - n_samples: 128
+2023-12-18 12:09:26,440 - root - INFO - n_importance: 64
+2023-12-18 12:09:26,440 - root - INFO - n_importance_step_size: 16
+2023-12-18 12:09:26,440 - root - INFO - inv_s: 0.3
+2023-12-18 12:09:26,440 - root - INFO - name_log: base
+2023-12-18 12:09:26,440 - root - INFO - dataset: scannet
+2023-12-18 12:09:26,440 - root - INFO - start_iter: 0
+2023-12-18 12:09:26,440 - root - INFO - log_dir: logs/scene0710_00/base
+2023-12-18 12:09:38,838 - root - INFO - init_geo 000/500 | loss: 0.29324063658714294
+2023-12-18 12:09:47,367 - root - INFO - init_geo 100/500 | loss: 7.925069803604856e-05
+2023-12-18 12:09:55,820 - root - INFO - init_geo 200/500 | loss: 1.0546628800511826e-05
+2023-12-18 12:10:04,278 - root - INFO - init_geo 300/500 | loss: 5.168527877685847e-06
+2023-12-18 12:10:30,519 - root - INFO - 
+Iter: 100 | pnsr: 18.887056 | color: 0.012921 | depth: 0.034710 | asdf: 0.293661 | eikonal: 0.025616
+2023-12-18 12:10:48,047 - root - INFO - 
+Iter: 200 | pnsr: 21.127850 | color: 0.007713 | depth: 0.011476 | asdf: 0.002477 | eikonal: 0.013403
+2023-12-18 12:11:05,609 - root - INFO - 
+Iter: 300 | pnsr: 22.809599 | color: 0.005236 | depth: 0.008815 | asdf: 0.002412 | eikonal: 0.010197
+2023-12-18 12:11:23,142 - root - INFO - 
+Iter: 400 | pnsr: 23.358208 | color: 0.004615 | depth: 0.009406 | asdf: 0.002435 | eikonal: 0.008505
+2023-12-18 12:11:40,612 - root - INFO - 
+Iter: 500 | pnsr: 23.911263 | color: 0.004063 | depth: 0.008748 | asdf: 0.002221 | eikonal: 0.007316
+2023-12-18 12:13:26,821 - root - INFO - Eval scene0710_00 base
+2023-12-18 12:14:12,056 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 12:14:12,056 - root - INFO - iter 500 || img0: PSNR 17.832 || lpips 0.564 || ssim 0.511
+2023-12-18 12:14:12,056 - root - INFO - iter 500 || img1: PSNR 19.512 || lpips 0.554 || ssim 0.558
+2023-12-18 12:14:12,056 - root - INFO - iter 500 || img2: PSNR 23.373 || lpips 0.532 || ssim 0.662
+2023-12-18 12:14:12,056 - root - INFO - iter 500 || img3: PSNR 22.296 || lpips 0.528 || ssim 0.650
+2023-12-18 12:14:12,056 - root - INFO - iter 500 || img4: PSNR 22.233 || lpips 0.537 || ssim 0.652
+2023-12-18 12:14:12,056 - root - INFO - iter 500 || img5: PSNR 21.259 || lpips 0.526 || ssim 0.675
+2023-12-18 12:14:12,056 - root - INFO - iter 500 || img6: PSNR 18.635 || lpips 0.640 || ssim 0.619
+2023-12-18 12:14:12,057 - root - INFO - iter 500 || img7: PSNR 19.285 || lpips 0.548 || ssim 0.648
+2023-12-18 12:14:12,085 - root - INFO - iter 500 || Test: PSNR 20.553 || lpips 0.554 || ssim 0.622 || rmse 0.107
+2023-12-18 12:14:29,594 - root - INFO - 
+Iter: 600 | pnsr: 24.848707 | color: 0.003274 | depth: 0.007579 | asdf: 0.002188 | eikonal: 0.006423
+2023-12-18 12:14:47,098 - root - INFO - 
+Iter: 700 | pnsr: 25.124767 | color: 0.003073 | depth: 0.006995 | asdf: 0.001967 | eikonal: 0.005910
+2023-12-18 12:15:04,730 - root - INFO - 
+Iter: 800 | pnsr: 25.322905 | color: 0.002936 | depth: 0.007850 | asdf: 0.002139 | eikonal: 0.005657
+2023-12-18 12:15:22,239 - root - INFO - 
+Iter: 900 | pnsr: 25.560312 | color: 0.002780 | depth: 0.008212 | asdf: 0.002064 | eikonal: 0.005351
+2023-12-18 12:15:39,701 - root - INFO - 
+Iter: 1000 | pnsr: 26.089077 | color: 0.002461 | depth: 0.007387 | asdf: 0.002152 | eikonal: 0.005229
+2023-12-18 12:17:25,799 - root - INFO - Eval scene0710_00 base
+2023-12-18 12:18:11,037 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 12:18:11,037 - root - INFO - iter 1000 || img0: PSNR 18.949 || lpips 0.451 || ssim 0.586
+2023-12-18 12:18:11,037 - root - INFO - iter 1000 || img1: PSNR 19.687 || lpips 0.484 || ssim 0.574
+2023-12-18 12:18:11,037 - root - INFO - iter 1000 || img2: PSNR 24.024 || lpips 0.439 || ssim 0.691
+2023-12-18 12:18:11,037 - root - INFO - iter 1000 || img3: PSNR 22.919 || lpips 0.443 || ssim 0.677
+2023-12-18 12:18:11,037 - root - INFO - iter 1000 || img4: PSNR 23.007 || lpips 0.450 || ssim 0.683
+2023-12-18 12:18:11,037 - root - INFO - iter 1000 || img5: PSNR 21.928 || lpips 0.470 || ssim 0.699
+2023-12-18 12:18:11,038 - root - INFO - iter 1000 || img6: PSNR 18.996 || lpips 0.570 || ssim 0.654
+2023-12-18 12:18:11,038 - root - INFO - iter 1000 || img7: PSNR 20.497 || lpips 0.480 || ssim 0.681
+2023-12-18 12:18:11,067 - root - INFO - iter 1000 || Test: PSNR 21.251 || lpips 0.473 || ssim 0.656 || rmse 0.104
+2023-12-18 12:18:28,565 - root - INFO - 
+Iter: 1100 | pnsr: 26.042208 | color: 0.002488 | depth: 0.007410 | asdf: 0.002087 | eikonal: 0.005097
+2023-12-18 12:18:46,097 - root - INFO - 
+Iter: 1200 | pnsr: 25.976723 | color: 0.002525 | depth: 0.007331 | asdf: 0.002087 | eikonal: 0.004804
+2023-12-18 12:19:03,546 - root - INFO - 
+Iter: 1300 | pnsr: 26.450106 | color: 0.002265 | depth: 0.007184 | asdf: 0.002035 | eikonal: 0.004686
+2023-12-18 12:19:21,017 - root - INFO - 
+Iter: 1400 | pnsr: 26.326889 | color: 0.002330 | depth: 0.007388 | asdf: 0.001934 | eikonal: 0.004652
+2023-12-18 12:19:38,520 - root - INFO - 
+Iter: 1500 | pnsr: 27.032621 | color: 0.001980 | depth: 0.006879 | asdf: 0.001947 | eikonal: 0.004473
+2023-12-18 12:21:25,007 - root - INFO - Eval scene0710_00 base
+2023-12-18 12:22:10,313 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 12:22:10,314 - root - INFO - iter 1500 || img0: PSNR 19.453 || lpips 0.392 || ssim 0.615
+2023-12-18 12:22:10,314 - root - INFO - iter 1500 || img1: PSNR 19.848 || lpips 0.457 || ssim 0.582
+2023-12-18 12:22:10,314 - root - INFO - iter 1500 || img2: PSNR 24.640 || lpips 0.352 || ssim 0.707
+2023-12-18 12:22:10,314 - root - INFO - iter 1500 || img3: PSNR 23.416 || lpips 0.367 || ssim 0.691
+2023-12-18 12:22:10,314 - root - INFO - iter 1500 || img4: PSNR 23.401 || lpips 0.369 || ssim 0.696
+2023-12-18 12:22:10,314 - root - INFO - iter 1500 || img5: PSNR 22.060 || lpips 0.437 || ssim 0.709
+2023-12-18 12:22:10,314 - root - INFO - iter 1500 || img6: PSNR 19.143 || lpips 0.507 || ssim 0.674
+2023-12-18 12:22:10,314 - root - INFO - iter 1500 || img7: PSNR 21.257 || lpips 0.408 || ssim 0.704
+2023-12-18 12:22:10,341 - root - INFO - iter 1500 || Test: PSNR 21.652 || lpips 0.411 || ssim 0.672 || rmse 0.104
+2023-12-18 12:22:27,888 - root - INFO - 
+Iter: 1600 | pnsr: 26.969168 | color: 0.002009 | depth: 0.008110 | asdf: 0.001922 | eikonal: 0.004401
+2023-12-18 12:22:45,430 - root - INFO - 
+Iter: 1700 | pnsr: 27.490580 | color: 0.001782 | depth: 0.008586 | asdf: 0.001985 | eikonal: 0.004307
+2023-12-18 12:23:02,964 - root - INFO - 
+Iter: 1800 | pnsr: 27.011433 | color: 0.001990 | depth: 0.008813 | asdf: 0.001881 | eikonal: 0.004278
+2023-12-18 12:23:20,521 - root - INFO - 
+Iter: 1900 | pnsr: 27.507944 | color: 0.001775 | depth: 0.007206 | asdf: 0.001842 | eikonal: 0.004167
+2023-12-18 12:23:38,091 - root - INFO - 
+Iter: 2000 | pnsr: 27.568701 | color: 0.001750 | depth: 0.008698 | asdf: 0.001956 | eikonal: 0.004242
+2023-12-18 12:25:24,526 - root - INFO - Eval scene0710_00 base
+2023-12-18 12:26:10,027 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 12:26:10,027 - root - INFO - iter 2000 || img0: PSNR 19.606 || lpips 0.370 || ssim 0.632
+2023-12-18 12:26:10,027 - root - INFO - iter 2000 || img1: PSNR 19.762 || lpips 0.452 || ssim 0.582
+2023-12-18 12:26:10,028 - root - INFO - iter 2000 || img2: PSNR 24.983 || lpips 0.318 || ssim 0.721
+2023-12-18 12:26:10,028 - root - INFO - iter 2000 || img3: PSNR 23.379 || lpips 0.338 || ssim 0.701
+2023-12-18 12:26:10,028 - root - INFO - iter 2000 || img4: PSNR 23.233 || lpips 0.339 || ssim 0.704
+2023-12-18 12:26:10,028 - root - INFO - iter 2000 || img5: PSNR 22.110 || lpips 0.408 || ssim 0.716
+2023-12-18 12:26:10,028 - root - INFO - iter 2000 || img6: PSNR 19.035 || lpips 0.471 || ssim 0.680
+2023-12-18 12:26:10,028 - root - INFO - iter 2000 || img7: PSNR 21.719 || lpips 0.367 || ssim 0.716
+2023-12-18 12:26:10,071 - root - INFO - iter 2000 || Test: PSNR 21.728 || lpips 0.383 || ssim 0.681 || rmse 0.110
+2023-12-18 12:26:27,662 - root - INFO - 
+Iter: 2100 | pnsr: 27.305391 | color: 0.001860 | depth: 0.008394 | asdf: 0.001956 | eikonal: 0.004265
+2023-12-18 12:26:45,143 - root - INFO - 
+Iter: 2200 | pnsr: 28.339855 | color: 0.001466 | depth: 0.008129 | asdf: 0.001933 | eikonal: 0.004417
+2023-12-18 12:27:02,661 - root - INFO - 
+Iter: 2300 | pnsr: 28.077745 | color: 0.001557 | depth: 0.007930 | asdf: 0.001920 | eikonal: 0.004202
+2023-12-18 12:27:20,147 - root - INFO - 
+Iter: 2400 | pnsr: 27.995049 | color: 0.001587 | depth: 0.007285 | asdf: 0.001843 | eikonal: 0.004018
+2023-12-18 12:27:37,565 - root - INFO - 
+Iter: 2500 | pnsr: 27.603983 | color: 0.001736 | depth: 0.007081 | asdf: 0.001845 | eikonal: 0.004074
+2023-12-18 12:29:23,489 - root - INFO - Eval scene0710_00 base
+2023-12-18 12:30:09,043 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 12:30:09,044 - root - INFO - iter 2500 || img0: PSNR 19.573 || lpips 0.356 || ssim 0.633
+2023-12-18 12:30:09,044 - root - INFO - iter 2500 || img1: PSNR 19.685 || lpips 0.434 || ssim 0.578
+2023-12-18 12:30:09,044 - root - INFO - iter 2500 || img2: PSNR 25.605 || lpips 0.282 || ssim 0.728
+2023-12-18 12:30:09,044 - root - INFO - iter 2500 || img3: PSNR 23.905 || lpips 0.302 || ssim 0.707
+2023-12-18 12:30:09,044 - root - INFO - iter 2500 || img4: PSNR 23.650 || lpips 0.304 || ssim 0.713
+2023-12-18 12:30:09,044 - root - INFO - iter 2500 || img5: PSNR 22.030 || lpips 0.403 || ssim 0.709
+2023-12-18 12:30:09,044 - root - INFO - iter 2500 || img6: PSNR 19.205 || lpips 0.447 || ssim 0.682
+2023-12-18 12:30:09,044 - root - INFO - iter 2500 || img7: PSNR 22.311 || lpips 0.340 || ssim 0.721
+2023-12-18 12:30:09,063 - root - INFO - iter 2500 || Test: PSNR 21.996 || lpips 0.358 || ssim 0.684 || rmse 0.106
+2023-12-18 12:30:26,577 - root - INFO - 
+Iter: 2600 | pnsr: 27.843014 | color: 0.001643 | depth: 0.006148 | asdf: 0.001921 | eikonal: 0.004096
+2023-12-18 12:30:44,168 - root - INFO - 
+Iter: 2700 | pnsr: 27.790228 | color: 0.001663 | depth: 0.006579 | asdf: 0.001856 | eikonal: 0.004229
+2023-12-18 12:31:01,719 - root - INFO - 
+Iter: 2800 | pnsr: 28.114622 | color: 0.001544 | depth: 0.007120 | asdf: 0.001961 | eikonal: 0.004058
+2023-12-18 12:31:19,219 - root - INFO - 
+Iter: 2900 | pnsr: 28.448750 | color: 0.001429 | depth: 0.006472 | asdf: 0.001775 | eikonal: 0.004116
+2023-12-18 12:31:36,772 - root - INFO - 
+Iter: 3000 | pnsr: 28.785227 | color: 0.001323 | depth: 0.007328 | asdf: 0.001799 | eikonal: 0.004127
+2023-12-18 12:33:23,337 - root - INFO - Eval scene0710_00 base
+2023-12-18 12:34:08,597 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 12:34:08,597 - root - INFO - iter 3000 || img0: PSNR 19.594 || lpips 0.346 || ssim 0.644
+2023-12-18 12:34:08,597 - root - INFO - iter 3000 || img1: PSNR 19.849 || lpips 0.431 || ssim 0.587
+2023-12-18 12:34:08,597 - root - INFO - iter 3000 || img2: PSNR 25.653 || lpips 0.278 || ssim 0.730
+2023-12-18 12:34:08,597 - root - INFO - iter 3000 || img3: PSNR 23.791 || lpips 0.294 || ssim 0.708
+2023-12-18 12:34:08,597 - root - INFO - iter 3000 || img4: PSNR 23.502 || lpips 0.295 || ssim 0.714
+2023-12-18 12:34:08,598 - root - INFO - iter 3000 || img5: PSNR 22.153 || lpips 0.394 || ssim 0.719
+2023-12-18 12:34:08,598 - root - INFO - iter 3000 || img6: PSNR 19.058 || lpips 0.435 || ssim 0.683
+2023-12-18 12:34:08,598 - root - INFO - iter 3000 || img7: PSNR 22.143 || lpips 0.332 || ssim 0.723
+2023-12-18 12:34:08,628 - root - INFO - iter 3000 || Test: PSNR 21.968 || lpips 0.351 || ssim 0.689 || rmse 0.107
+2023-12-18 12:34:26,065 - root - INFO - 
+Iter: 3100 | pnsr: 28.489435 | color: 0.001416 | depth: 0.008185 | asdf: 0.001821 | eikonal: 0.004124
+2023-12-18 12:34:43,579 - root - INFO - 
+Iter: 3200 | pnsr: 28.558002 | color: 0.001394 | depth: 0.006703 | asdf: 0.001795 | eikonal: 0.004143
+2023-12-18 12:35:01,049 - root - INFO - 
+Iter: 3300 | pnsr: 29.141802 | color: 0.001218 | depth: 0.007624 | asdf: 0.001877 | eikonal: 0.004031
+2023-12-18 12:35:18,637 - root - INFO - 
+Iter: 3400 | pnsr: 28.679363 | color: 0.001355 | depth: 0.007050 | asdf: 0.001762 | eikonal: 0.003929
+2023-12-18 12:35:36,130 - root - INFO - 
+Iter: 3500 | pnsr: 28.834055 | color: 0.001308 | depth: 0.007196 | asdf: 0.001685 | eikonal: 0.004053
+2023-12-18 12:37:22,246 - root - INFO - Eval scene0710_00 base
+2023-12-18 12:38:07,593 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 12:38:07,593 - root - INFO - iter 3500 || img0: PSNR 19.492 || lpips 0.339 || ssim 0.646
+2023-12-18 12:38:07,593 - root - INFO - iter 3500 || img1: PSNR 19.642 || lpips 0.430 || ssim 0.585
+2023-12-18 12:38:07,593 - root - INFO - iter 3500 || img2: PSNR 25.835 || lpips 0.275 || ssim 0.729
+2023-12-18 12:38:07,593 - root - INFO - iter 3500 || img3: PSNR 23.887 || lpips 0.293 || ssim 0.705
+2023-12-18 12:38:07,594 - root - INFO - iter 3500 || img4: PSNR 23.676 || lpips 0.290 || ssim 0.710
+2023-12-18 12:38:07,594 - root - INFO - iter 3500 || img5: PSNR 21.965 || lpips 0.386 || ssim 0.721
+2023-12-18 12:38:07,594 - root - INFO - iter 3500 || img6: PSNR 18.968 || lpips 0.441 || ssim 0.678
+2023-12-18 12:38:07,594 - root - INFO - iter 3500 || img7: PSNR 21.993 || lpips 0.328 || ssim 0.722
+2023-12-18 12:38:07,619 - root - INFO - iter 3500 || Test: PSNR 21.932 || lpips 0.348 || ssim 0.687 || rmse 0.111
+2023-12-18 12:38:25,177 - root - INFO - 
+Iter: 3600 | pnsr: 28.868183 | color: 0.001298 | depth: 0.007302 | asdf: 0.001719 | eikonal: 0.003949
+2023-12-18 12:38:42,752 - root - INFO - 
+Iter: 3700 | pnsr: 28.758997 | color: 0.001331 | depth: 0.007556 | asdf: 0.001742 | eikonal: 0.004174
+2023-12-18 12:39:00,262 - root - INFO - 
+Iter: 3800 | pnsr: 29.391344 | color: 0.001150 | depth: 0.006851 | asdf: 0.001750 | eikonal: 0.004113
+2023-12-18 12:39:17,835 - root - INFO - 
+Iter: 3900 | pnsr: 29.063478 | color: 0.001241 | depth: 0.007029 | asdf: 0.001725 | eikonal: 0.004057
+2023-12-18 12:39:35,313 - root - INFO - 
+Iter: 4000 | pnsr: 28.855511 | color: 0.001302 | depth: 0.007753 | asdf: 0.001688 | eikonal: 0.004126
+2023-12-18 12:41:21,849 - root - INFO - Eval scene0710_00 base
+2023-12-18 12:42:06,802 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 12:42:06,802 - root - INFO - iter 4000 || img0: PSNR 19.529 || lpips 0.326 || ssim 0.651
+2023-12-18 12:42:06,802 - root - INFO - iter 4000 || img1: PSNR 19.741 || lpips 0.416 || ssim 0.589
+2023-12-18 12:42:06,802 - root - INFO - iter 4000 || img2: PSNR 25.705 || lpips 0.269 || ssim 0.728
+2023-12-18 12:42:06,803 - root - INFO - iter 4000 || img3: PSNR 23.903 || lpips 0.289 || ssim 0.704
+2023-12-18 12:42:06,803 - root - INFO - iter 4000 || img4: PSNR 23.780 || lpips 0.288 || ssim 0.710
+2023-12-18 12:42:06,803 - root - INFO - iter 4000 || img5: PSNR 22.090 || lpips 0.382 || ssim 0.726
+2023-12-18 12:42:06,803 - root - INFO - iter 4000 || img6: PSNR 19.043 || lpips 0.430 || ssim 0.680
+2023-12-18 12:42:06,803 - root - INFO - iter 4000 || img7: PSNR 23.166 || lpips 0.317 || ssim 0.724
+2023-12-18 12:42:06,839 - root - INFO - iter 4000 || Test: PSNR 22.120 || lpips 0.339 || ssim 0.689 || rmse 0.112
+2023-12-18 12:42:24,372 - root - INFO - 
+Iter: 4100 | pnsr: 29.577339 | color: 0.001102 | depth: 0.007288 | asdf: 0.001844 | eikonal: 0.004262
+2023-12-18 12:42:41,878 - root - INFO - 
+Iter: 4200 | pnsr: 28.852379 | color: 0.001302 | depth: 0.006643 | asdf: 0.001814 | eikonal: 0.004256
+2023-12-18 12:42:59,526 - root - INFO - 
+Iter: 4300 | pnsr: 29.908201 | color: 0.001021 | depth: 0.005888 | asdf: 0.001708 | eikonal: 0.004130
+2023-12-18 12:43:17,176 - root - INFO - 
+Iter: 4400 | pnsr: 29.246471 | color: 0.001189 | depth: 0.006538 | asdf: 0.001808 | eikonal: 0.004355
+2023-12-18 12:43:34,699 - root - INFO - 
+Iter: 4500 | pnsr: 29.790613 | color: 0.001049 | depth: 0.007200 | asdf: 0.001787 | eikonal: 0.004296
+2023-12-18 12:45:20,963 - root - INFO - Eval scene0710_00 base
+2023-12-18 12:46:06,263 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 12:46:06,263 - root - INFO - iter 4500 || img0: PSNR 19.471 || lpips 0.316 || ssim 0.657
+2023-12-18 12:46:06,263 - root - INFO - iter 4500 || img1: PSNR 19.789 || lpips 0.414 || ssim 0.593
+2023-12-18 12:46:06,264 - root - INFO - iter 4500 || img2: PSNR 25.442 || lpips 0.258 || ssim 0.731
+2023-12-18 12:46:06,264 - root - INFO - iter 4500 || img3: PSNR 23.429 || lpips 0.280 || ssim 0.704
+2023-12-18 12:46:06,264 - root - INFO - iter 4500 || img4: PSNR 23.094 || lpips 0.281 || ssim 0.709
+2023-12-18 12:46:06,264 - root - INFO - iter 4500 || img5: PSNR 22.035 || lpips 0.370 || ssim 0.730
+2023-12-18 12:46:06,264 - root - INFO - iter 4500 || img6: PSNR 19.064 || lpips 0.423 || ssim 0.686
+2023-12-18 12:46:06,264 - root - INFO - iter 4500 || img7: PSNR 22.465 || lpips 0.309 || ssim 0.726
+2023-12-18 12:46:06,292 - root - INFO - iter 4500 || Test: PSNR 21.849 || lpips 0.331 || ssim 0.692 || rmse 0.114
+2023-12-18 12:46:23,759 - root - INFO - 
+Iter: 4600 | pnsr: 29.284870 | color: 0.001179 | depth: 0.007015 | asdf: 0.001787 | eikonal: 0.004589
+2023-12-18 12:46:41,293 - root - INFO - 
+Iter: 4700 | pnsr: 29.794529 | color: 0.001048 | depth: 0.005764 | asdf: 0.001744 | eikonal: 0.004294
+2023-12-18 12:46:58,818 - root - INFO - 
+Iter: 4800 | pnsr: 30.089085 | color: 0.000980 | depth: 0.007447 | asdf: 0.001652 | eikonal: 0.004144
+2023-12-18 12:47:16,356 - root - INFO - 
+Iter: 4900 | pnsr: 29.921824 | color: 0.001018 | depth: 0.006532 | asdf: 0.001687 | eikonal: 0.004186
+2023-12-18 12:47:33,909 - root - INFO - 
+Iter: 5000 | pnsr: 29.867249 | color: 0.001031 | depth: 0.006416 | asdf: 0.001702 | eikonal: 0.004266
+2023-12-18 12:49:20,134 - root - INFO - Eval scene0710_00 base
+2023-12-18 12:50:05,074 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 12:50:05,074 - root - INFO - iter 5000 || img0: PSNR 19.401 || lpips 0.311 || ssim 0.660
+2023-12-18 12:50:05,074 - root - INFO - iter 5000 || img1: PSNR 19.648 || lpips 0.404 || ssim 0.595
+2023-12-18 12:50:05,075 - root - INFO - iter 5000 || img2: PSNR 25.762 || lpips 0.260 || ssim 0.735
+2023-12-18 12:50:05,075 - root - INFO - iter 5000 || img3: PSNR 23.722 || lpips 0.280 || ssim 0.708
+2023-12-18 12:50:05,075 - root - INFO - iter 5000 || img4: PSNR 23.511 || lpips 0.279 || ssim 0.712
+2023-12-18 12:50:05,075 - root - INFO - iter 5000 || img5: PSNR 22.044 || lpips 0.364 || ssim 0.737
+2023-12-18 12:50:05,075 - root - INFO - iter 5000 || img6: PSNR 18.981 || lpips 0.425 || ssim 0.684
+2023-12-18 12:50:05,075 - root - INFO - iter 5000 || img7: PSNR 23.300 || lpips 0.307 || ssim 0.728
+2023-12-18 12:50:05,105 - root - INFO - iter 5000 || Test: PSNR 22.046 || lpips 0.329 || ssim 0.695 || rmse 0.119
+2023-12-18 12:50:22,622 - root - INFO - 
+Iter: 5100 | pnsr: 29.822239 | color: 0.001042 | depth: 0.006941 | asdf: 0.001745 | eikonal: 0.004426
+2023-12-18 12:50:40,149 - root - INFO - 
+Iter: 5200 | pnsr: 29.601656 | color: 0.001096 | depth: 0.006593 | asdf: 0.001758 | eikonal: 0.004606
+2023-12-18 12:50:57,740 - root - INFO - 
+Iter: 5300 | pnsr: 30.171736 | color: 0.000961 | depth: 0.006765 | asdf: 0.001768 | eikonal: 0.004599
+2023-12-18 12:51:15,249 - root - INFO - 
+Iter: 5400 | pnsr: 29.767933 | color: 0.001055 | depth: 0.007374 | asdf: 0.001758 | eikonal: 0.004731
+2023-12-18 12:51:32,743 - root - INFO - 
+Iter: 5500 | pnsr: 30.483618 | color: 0.000895 | depth: 0.007635 | asdf: 0.001802 | eikonal: 0.005022
+2023-12-18 12:53:19,086 - root - INFO - Eval scene0710_00 base
+2023-12-18 12:54:04,422 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 12:54:04,422 - root - INFO - iter 5500 || img0: PSNR 19.228 || lpips 0.311 || ssim 0.659
+2023-12-18 12:54:04,422 - root - INFO - iter 5500 || img1: PSNR 19.485 || lpips 0.404 || ssim 0.592
+2023-12-18 12:54:04,422 - root - INFO - iter 5500 || img2: PSNR 25.744 || lpips 0.262 || ssim 0.733
+2023-12-18 12:54:04,422 - root - INFO - iter 5500 || img3: PSNR 23.729 || lpips 0.282 || ssim 0.704
+2023-12-18 12:54:04,422 - root - INFO - iter 5500 || img4: PSNR 23.430 || lpips 0.277 || ssim 0.708
+2023-12-18 12:54:04,422 - root - INFO - iter 5500 || img5: PSNR 22.013 || lpips 0.361 || ssim 0.737
+2023-12-18 12:54:04,422 - root - INFO - iter 5500 || img6: PSNR 19.050 || lpips 0.421 || ssim 0.683
+2023-12-18 12:54:04,422 - root - INFO - iter 5500 || img7: PSNR 23.253 || lpips 0.308 || ssim 0.724
+2023-12-18 12:54:04,459 - root - INFO - iter 5500 || Test: PSNR 21.992 || lpips 0.328 || ssim 0.692 || rmse 0.122
+2023-12-18 12:54:21,972 - root - INFO - 
+Iter: 5600 | pnsr: 30.693581 | color: 0.000852 | depth: 0.006896 | asdf: 0.001782 | eikonal: 0.004847
+2023-12-18 12:54:39,491 - root - INFO - 
+Iter: 5700 | pnsr: 30.689903 | color: 0.000853 | depth: 0.007225 | asdf: 0.001781 | eikonal: 0.004938
+2023-12-18 12:54:57,026 - root - INFO - 
+Iter: 5800 | pnsr: 30.577644 | color: 0.000875 | depth: 0.006568 | asdf: 0.001824 | eikonal: 0.005098
+2023-12-18 12:55:14,528 - root - INFO - 
+Iter: 5900 | pnsr: 30.193737 | color: 0.000956 | depth: 0.006639 | asdf: 0.001817 | eikonal: 0.005308
+2023-12-18 12:55:32,057 - root - INFO - 
+Iter: 6000 | pnsr: 30.794050 | color: 0.000833 | depth: 0.005798 | asdf: 0.001799 | eikonal: 0.005361
+2023-12-18 12:57:18,993 - root - INFO - Eval scene0710_00 base
+2023-12-18 12:58:04,170 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 12:58:04,170 - root - INFO - iter 6000 || img0: PSNR 19.208 || lpips 0.300 || ssim 0.661
+2023-12-18 12:58:04,170 - root - INFO - iter 6000 || img1: PSNR 19.595 || lpips 0.398 || ssim 0.597
+2023-12-18 12:58:04,170 - root - INFO - iter 6000 || img2: PSNR 25.918 || lpips 0.261 || ssim 0.731
+2023-12-18 12:58:04,170 - root - INFO - iter 6000 || img3: PSNR 23.673 || lpips 0.281 || ssim 0.702
+2023-12-18 12:58:04,170 - root - INFO - iter 6000 || img4: PSNR 23.316 || lpips 0.281 || ssim 0.703
+2023-12-18 12:58:04,170 - root - INFO - iter 6000 || img5: PSNR 21.811 || lpips 0.353 || ssim 0.738
+2023-12-18 12:58:04,170 - root - INFO - iter 6000 || img6: PSNR 18.938 || lpips 0.418 || ssim 0.685
+2023-12-18 12:58:04,170 - root - INFO - iter 6000 || img7: PSNR 22.834 || lpips 0.306 || ssim 0.726
+2023-12-18 12:58:04,198 - root - INFO - iter 6000 || Test: PSNR 21.912 || lpips 0.325 || ssim 0.693 || rmse 0.127
+2023-12-18 12:58:21,750 - root - INFO - 
+Iter: 6100 | pnsr: 30.432329 | color: 0.000905 | depth: 0.006672 | asdf: 0.001825 | eikonal: 0.005341
+2023-12-18 12:58:39,225 - root - INFO - 
+Iter: 6200 | pnsr: 30.721024 | color: 0.000847 | depth: 0.005624 | asdf: 0.001897 | eikonal: 0.005703
+2023-12-18 12:58:56,721 - root - INFO - 
+Iter: 6300 | pnsr: 30.222574 | color: 0.000950 | depth: 0.006436 | asdf: 0.001927 | eikonal: 0.005748
+2023-12-18 12:59:14,242 - root - INFO - 
+Iter: 6400 | pnsr: 30.997377 | color: 0.000795 | depth: 0.006602 | asdf: 0.001818 | eikonal: 0.005798
+2023-12-18 12:59:31,772 - root - INFO - 
+Iter: 6500 | pnsr: 30.446342 | color: 0.000902 | depth: 0.006450 | asdf: 0.001867 | eikonal: 0.005381
+2023-12-18 13:01:17,873 - root - INFO - Eval scene0710_00 base
+2023-12-18 13:02:02,978 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 13:02:02,978 - root - INFO - iter 6500 || img0: PSNR 19.116 || lpips 0.300 || ssim 0.666
+2023-12-18 13:02:02,978 - root - INFO - iter 6500 || img1: PSNR 19.431 || lpips 0.390 || ssim 0.600
+2023-12-18 13:02:02,978 - root - INFO - iter 6500 || img2: PSNR 25.970 || lpips 0.258 || ssim 0.731
+2023-12-18 13:02:02,978 - root - INFO - iter 6500 || img3: PSNR 23.772 || lpips 0.273 || ssim 0.701
+2023-12-18 13:02:02,978 - root - INFO - iter 6500 || img4: PSNR 23.497 || lpips 0.278 || ssim 0.703
+2023-12-18 13:02:02,978 - root - INFO - iter 6500 || img5: PSNR 21.841 || lpips 0.351 || ssim 0.741
+2023-12-18 13:02:02,978 - root - INFO - iter 6500 || img6: PSNR 18.899 || lpips 0.420 || ssim 0.684
+2023-12-18 13:02:02,978 - root - INFO - iter 6500 || img7: PSNR 22.791 || lpips 0.309 || ssim 0.722
+2023-12-18 13:02:03,007 - root - INFO - iter 6500 || Test: PSNR 21.915 || lpips 0.322 || ssim 0.693 || rmse 0.131
+2023-12-18 13:02:20,552 - root - INFO - 
+Iter: 6600 | pnsr: 30.388752 | color: 0.000914 | depth: 0.006200 | asdf: 0.001932 | eikonal: 0.005424
+2023-12-18 13:02:38,036 - root - INFO - 
+Iter: 6700 | pnsr: 30.450178 | color: 0.000902 | depth: 0.005907 | asdf: 0.001832 | eikonal: 0.005335
+2023-12-18 13:02:55,519 - root - INFO - 
+Iter: 6800 | pnsr: 30.345839 | color: 0.000923 | depth: 0.007253 | asdf: 0.001844 | eikonal: 0.005192
+2023-12-18 13:03:13,023 - root - INFO - 
+Iter: 6900 | pnsr: 30.993998 | color: 0.000795 | depth: 0.005810 | asdf: 0.001767 | eikonal: 0.005180
+2023-12-18 13:03:30,491 - root - INFO - 
+Iter: 7000 | pnsr: 30.519173 | color: 0.000887 | depth: 0.006273 | asdf: 0.001833 | eikonal: 0.005295
+2023-12-18 13:05:17,143 - root - INFO - Eval scene0710_00 base
+2023-12-18 13:06:02,375 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 13:06:02,375 - root - INFO - iter 7000 || img0: PSNR 19.158 || lpips 0.291 || ssim 0.668
+2023-12-18 13:06:02,375 - root - INFO - iter 7000 || img1: PSNR 19.531 || lpips 0.388 || ssim 0.604
+2023-12-18 13:06:02,375 - root - INFO - iter 7000 || img2: PSNR 25.759 || lpips 0.262 || ssim 0.733
+2023-12-18 13:06:02,376 - root - INFO - iter 7000 || img3: PSNR 23.427 || lpips 0.276 || ssim 0.701
+2023-12-18 13:06:02,376 - root - INFO - iter 7000 || img4: PSNR 23.110 || lpips 0.275 || ssim 0.701
+2023-12-18 13:06:02,376 - root - INFO - iter 7000 || img5: PSNR 22.137 || lpips 0.346 || ssim 0.751
+2023-12-18 13:06:02,376 - root - INFO - iter 7000 || img6: PSNR 18.824 || lpips 0.416 || ssim 0.684
+2023-12-18 13:06:02,376 - root - INFO - iter 7000 || img7: PSNR 22.727 || lpips 0.307 || ssim 0.722
+2023-12-18 13:06:02,418 - root - INFO - iter 7000 || Test: PSNR 21.834 || lpips 0.320 || ssim 0.696 || rmse 0.134
+2023-12-18 13:06:19,915 - root - INFO - 
+Iter: 7100 | pnsr: 30.960989 | color: 0.000801 | depth: 0.006765 | asdf: 0.001768 | eikonal: 0.005033
+2023-12-18 13:06:37,523 - root - INFO - 
+Iter: 7200 | pnsr: 30.402346 | color: 0.000912 | depth: 0.007017 | asdf: 0.001735 | eikonal: 0.005018
+2023-12-18 13:06:55,084 - root - INFO - 
+Iter: 7300 | pnsr: 30.543905 | color: 0.000882 | depth: 0.006029 | asdf: 0.001764 | eikonal: 0.004986
+2023-12-18 13:07:12,605 - root - INFO - 
+Iter: 7400 | pnsr: 31.011168 | color: 0.000792 | depth: 0.005606 | asdf: 0.001717 | eikonal: 0.004936
+2023-12-18 13:07:30,139 - root - INFO - 
+Iter: 7500 | pnsr: 30.692398 | color: 0.000853 | depth: 0.006680 | asdf: 0.001774 | eikonal: 0.005041
+2023-12-18 13:09:17,259 - root - INFO - Eval scene0710_00 base
+2023-12-18 13:10:02,685 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 13:10:02,686 - root - INFO - iter 7500 || img0: PSNR 19.020 || lpips 0.290 || ssim 0.669
+2023-12-18 13:10:02,686 - root - INFO - iter 7500 || img1: PSNR 19.447 || lpips 0.387 || ssim 0.606
+2023-12-18 13:10:02,686 - root - INFO - iter 7500 || img2: PSNR 25.629 || lpips 0.258 || ssim 0.736
+2023-12-18 13:10:02,686 - root - INFO - iter 7500 || img3: PSNR 23.371 || lpips 0.273 || ssim 0.701
+2023-12-18 13:10:02,686 - root - INFO - iter 7500 || img4: PSNR 23.031 || lpips 0.273 || ssim 0.700
+2023-12-18 13:10:02,686 - root - INFO - iter 7500 || img5: PSNR 21.970 || lpips 0.342 || ssim 0.752
+2023-12-18 13:10:02,686 - root - INFO - iter 7500 || img6: PSNR 18.778 || lpips 0.422 || ssim 0.683
+2023-12-18 13:10:02,686 - root - INFO - iter 7500 || img7: PSNR 22.612 || lpips 0.305 || ssim 0.722
+2023-12-18 13:10:02,728 - root - INFO - iter 7500 || Test: PSNR 21.732 || lpips 0.319 || ssim 0.696 || rmse 0.136
+2023-12-18 13:10:20,352 - root - INFO - 
+Iter: 7600 | pnsr: 31.369446 | color: 0.000730 | depth: 0.005769 | asdf: 0.001707 | eikonal: 0.004729
+2023-12-18 13:10:37,832 - root - INFO - 
+Iter: 7700 | pnsr: 30.873444 | color: 0.000818 | depth: 0.007074 | asdf: 0.001792 | eikonal: 0.004964
+2023-12-18 13:10:55,338 - root - INFO - 
+Iter: 7800 | pnsr: 30.931927 | color: 0.000807 | depth: 0.006425 | asdf: 0.001771 | eikonal: 0.004987
+2023-12-18 13:11:12,927 - root - INFO - 
+Iter: 7900 | pnsr: 31.152925 | color: 0.000767 | depth: 0.005119 | asdf: 0.001735 | eikonal: 0.005038
+2023-12-18 13:11:30,478 - root - INFO - 
+Iter: 8000 | pnsr: 30.635693 | color: 0.000864 | depth: 0.005993 | asdf: 0.001688 | eikonal: 0.004777
+2023-12-18 13:13:17,355 - root - INFO - Eval scene0710_00 base
+2023-12-18 13:14:03,114 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 13:14:03,115 - root - INFO - iter 8000 || img0: PSNR 19.075 || lpips 0.292 || ssim 0.668
+2023-12-18 13:14:03,115 - root - INFO - iter 8000 || img1: PSNR 19.404 || lpips 0.382 || ssim 0.609
+2023-12-18 13:14:03,115 - root - INFO - iter 8000 || img2: PSNR 25.761 || lpips 0.267 || ssim 0.732
+2023-12-18 13:14:03,115 - root - INFO - iter 8000 || img3: PSNR 23.469 || lpips 0.285 || ssim 0.696
+2023-12-18 13:14:03,115 - root - INFO - iter 8000 || img4: PSNR 23.125 || lpips 0.278 || ssim 0.697
+2023-12-18 13:14:03,115 - root - INFO - iter 8000 || img5: PSNR 22.342 || lpips 0.344 || ssim 0.759
+2023-12-18 13:14:03,115 - root - INFO - iter 8000 || img6: PSNR 18.644 || lpips 0.428 || ssim 0.681
+2023-12-18 13:14:03,115 - root - INFO - iter 8000 || img7: PSNR 22.216 || lpips 0.309 || ssim 0.720
+2023-12-18 13:14:03,147 - root - INFO - iter 8000 || Test: PSNR 21.755 || lpips 0.323 || ssim 0.695 || rmse 0.139
+2023-12-18 13:14:20,647 - root - INFO - 
+Iter: 8100 | pnsr: 31.269623 | color: 0.000747 | depth: 0.005676 | asdf: 0.001777 | eikonal: 0.004763
+2023-12-18 13:14:38,239 - root - INFO - 
+Iter: 8200 | pnsr: 31.142031 | color: 0.000769 | depth: 0.005944 | asdf: 0.001702 | eikonal: 0.004660
+2023-12-18 13:14:55,698 - root - INFO - 
+Iter: 8300 | pnsr: 31.151299 | color: 0.000767 | depth: 0.005689 | asdf: 0.001712 | eikonal: 0.004586
+2023-12-18 13:15:13,262 - root - INFO - 
+Iter: 8400 | pnsr: 31.608458 | color: 0.000690 | depth: 0.005902 | asdf: 0.001674 | eikonal: 0.004845
+2023-12-18 13:15:30,776 - root - INFO - 
+Iter: 8500 | pnsr: 31.741810 | color: 0.000670 | depth: 0.006148 | asdf: 0.001749 | eikonal: 0.004601
+2023-12-18 13:17:16,786 - root - INFO - Eval scene0710_00 base
+2023-12-18 13:18:02,091 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 13:18:02,092 - root - INFO - iter 8500 || img0: PSNR 19.052 || lpips 0.284 || ssim 0.673
+2023-12-18 13:18:02,092 - root - INFO - iter 8500 || img1: PSNR 19.398 || lpips 0.377 || ssim 0.609
+2023-12-18 13:18:02,092 - root - INFO - iter 8500 || img2: PSNR 25.586 || lpips 0.264 || ssim 0.736
+2023-12-18 13:18:02,092 - root - INFO - iter 8500 || img3: PSNR 23.206 || lpips 0.282 || ssim 0.695
+2023-12-18 13:18:02,092 - root - INFO - iter 8500 || img4: PSNR 22.813 || lpips 0.276 || ssim 0.695
+2023-12-18 13:18:02,092 - root - INFO - iter 8500 || img5: PSNR 22.239 || lpips 0.339 || ssim 0.759
+2023-12-18 13:18:02,092 - root - INFO - iter 8500 || img6: PSNR 18.775 || lpips 0.419 || ssim 0.683
+2023-12-18 13:18:02,092 - root - INFO - iter 8500 || img7: PSNR 22.509 || lpips 0.299 || ssim 0.721
+2023-12-18 13:18:02,118 - root - INFO - iter 8500 || Test: PSNR 21.697 || lpips 0.318 || ssim 0.696 || rmse 0.141
+2023-12-18 13:18:19,709 - root - INFO - 
+Iter: 8600 | pnsr: 31.078358 | color: 0.000780 | depth: 0.005735 | asdf: 0.001626 | eikonal: 0.004610
+2023-12-18 13:18:37,203 - root - INFO - 
+Iter: 8700 | pnsr: 31.330521 | color: 0.000736 | depth: 0.005817 | asdf: 0.001669 | eikonal: 0.004774
+2023-12-18 13:18:54,775 - root - INFO - 
+Iter: 8800 | pnsr: 30.923813 | color: 0.000808 | depth: 0.006600 | asdf: 0.001724 | eikonal: 0.004827
+2023-12-18 13:19:12,386 - root - INFO - 
+Iter: 8900 | pnsr: 30.924118 | color: 0.000808 | depth: 0.005380 | asdf: 0.001710 | eikonal: 0.004915
+2023-12-18 13:19:29,959 - root - INFO - 
+Iter: 9000 | pnsr: 31.246870 | color: 0.000750 | depth: 0.006105 | asdf: 0.001693 | eikonal: 0.004715
+2023-12-18 13:21:16,071 - root - INFO - Eval scene0710_00 base
+2023-12-18 13:22:01,188 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 13:22:01,189 - root - INFO - iter 9000 || img0: PSNR 18.904 || lpips 0.282 || ssim 0.671
+2023-12-18 13:22:01,189 - root - INFO - iter 9000 || img1: PSNR 19.130 || lpips 0.378 || ssim 0.604
+2023-12-18 13:22:01,189 - root - INFO - iter 9000 || img2: PSNR 25.634 || lpips 0.270 || ssim 0.735
+2023-12-18 13:22:01,189 - root - INFO - iter 9000 || img3: PSNR 23.092 || lpips 0.290 || ssim 0.688
+2023-12-18 13:22:01,189 - root - INFO - iter 9000 || img4: PSNR 22.693 || lpips 0.280 || ssim 0.689
+2023-12-18 13:22:01,189 - root - INFO - iter 9000 || img5: PSNR 22.300 || lpips 0.337 || ssim 0.759
+2023-12-18 13:22:01,189 - root - INFO - iter 9000 || img6: PSNR 18.667 || lpips 0.420 || ssim 0.681
+2023-12-18 13:22:01,189 - root - INFO - iter 9000 || img7: PSNR 22.216 || lpips 0.306 || ssim 0.719
+2023-12-18 13:22:01,215 - root - INFO - iter 9000 || Test: PSNR 21.580 || lpips 0.320 || ssim 0.694 || rmse 0.145
+2023-12-18 13:22:18,834 - root - INFO - 
+Iter: 9100 | pnsr: 31.918245 | color: 0.000643 | depth: 0.005864 | asdf: 0.001677 | eikonal: 0.004820
+2023-12-18 13:22:36,346 - root - INFO - 
+Iter: 9200 | pnsr: 31.528328 | color: 0.000703 | depth: 0.005508 | asdf: 0.001654 | eikonal: 0.004772
+2023-12-18 13:22:53,786 - root - INFO - 
+Iter: 9300 | pnsr: 31.390347 | color: 0.000726 | depth: 0.005021 | asdf: 0.001669 | eikonal: 0.004910
+2023-12-18 13:23:11,295 - root - INFO - 
+Iter: 9400 | pnsr: 31.357992 | color: 0.000731 | depth: 0.005684 | asdf: 0.001731 | eikonal: 0.004906
+2023-12-18 13:23:28,805 - root - INFO - 
+Iter: 9500 | pnsr: 30.824146 | color: 0.000827 | depth: 0.006078 | asdf: 0.001718 | eikonal: 0.004956
+2023-12-18 13:25:15,100 - root - INFO - Eval scene0710_00 base
+2023-12-18 13:26:00,597 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 13:26:00,597 - root - INFO - iter 9500 || img0: PSNR 18.814 || lpips 0.281 || ssim 0.670
+2023-12-18 13:26:00,597 - root - INFO - iter 9500 || img1: PSNR 19.092 || lpips 0.375 || ssim 0.604
+2023-12-18 13:26:00,597 - root - INFO - iter 9500 || img2: PSNR 25.542 || lpips 0.267 || ssim 0.732
+2023-12-18 13:26:00,597 - root - INFO - iter 9500 || img3: PSNR 23.118 || lpips 0.284 || ssim 0.683
+2023-12-18 13:26:00,597 - root - INFO - iter 9500 || img4: PSNR 22.792 || lpips 0.277 || ssim 0.685
+2023-12-18 13:26:00,597 - root - INFO - iter 9500 || img5: PSNR 22.266 || lpips 0.334 || ssim 0.759
+2023-12-18 13:26:00,597 - root - INFO - iter 9500 || img6: PSNR 18.655 || lpips 0.423 || ssim 0.680
+2023-12-18 13:26:00,597 - root - INFO - iter 9500 || img7: PSNR 22.589 || lpips 0.304 || ssim 0.719
+2023-12-18 13:26:00,640 - root - INFO - iter 9500 || Test: PSNR 21.609 || lpips 0.318 || ssim 0.692 || rmse 0.146
+2023-12-18 13:26:18,268 - root - INFO - 
+Iter: 9600 | pnsr: 31.836275 | color: 0.000655 | depth: 0.005299 | asdf: 0.001639 | eikonal: 0.004815
+2023-12-18 13:26:35,835 - root - INFO - 
+Iter: 9700 | pnsr: 32.194687 | color: 0.000603 | depth: 0.006078 | asdf: 0.001673 | eikonal: 0.004948
+2023-12-18 13:26:53,384 - root - INFO - 
+Iter: 9800 | pnsr: 30.907408 | color: 0.000811 | depth: 0.005549 | asdf: 0.001696 | eikonal: 0.005035
+2023-12-18 13:27:10,934 - root - INFO - 
+Iter: 9900 | pnsr: 31.871334 | color: 0.000650 | depth: 0.005263 | asdf: 0.001719 | eikonal: 0.004981
+2023-12-18 13:27:28,461 - root - INFO - 
+Iter: 10000 | pnsr: 31.126003 | color: 0.000772 | depth: 0.006005 | asdf: 0.001677 | eikonal: 0.005014
+2023-12-18 13:29:14,606 - root - INFO - Eval scene0710_00 base
+2023-12-18 13:30:00,000 - root - INFO - -------------------------Eval--------------------------
+2023-12-18 13:30:00,000 - root - INFO - iter 10000 || img0: PSNR 18.862 || lpips 0.281 || ssim 0.671
+2023-12-18 13:30:00,000 - root - INFO - iter 10000 || img1: PSNR 19.259 || lpips 0.378 || ssim 0.608
+2023-12-18 13:30:00,000 - root - INFO - iter 10000 || img2: PSNR 24.938 || lpips 0.267 || ssim 0.734
+2023-12-18 13:30:00,000 - root - INFO - iter 10000 || img3: PSNR 22.595 || lpips 0.285 || ssim 0.681
+2023-12-18 13:30:00,000 - root - INFO - iter 10000 || img4: PSNR 22.322 || lpips 0.278 || ssim 0.685
+2023-12-18 13:30:00,000 - root - INFO - iter 10000 || img5: PSNR 22.325 || lpips 0.332 || ssim 0.760
+2023-12-18 13:30:00,000 - root - INFO - iter 10000 || img6: PSNR 18.665 || lpips 0.427 || ssim 0.678
+2023-12-18 13:30:00,000 - root - INFO - iter 10000 || img7: PSNR 22.490 || lpips 0.304 || ssim 0.720
+2023-12-18 13:30:00,027 - root - INFO - iter 10000 || Test: PSNR 21.432 || lpips 0.319 || ssim 0.692 || rmse 0.152
+2023-12-18 13:30:00,028 - root - INFO - iter [00500/10000] psnr 20.553 lpips 0.554 ssim 0.622 rmse 0.107
+2023-12-18 13:30:00,028 - root - INFO - iter [01000/10000] psnr 21.251 lpips 0.473 ssim 0.656 rmse 0.104
+2023-12-18 13:30:00,028 - root - INFO - iter [01500/10000] psnr 21.652 lpips 0.411 ssim 0.672 rmse 0.104
+2023-12-18 13:30:00,028 - root - INFO - iter [02000/10000] psnr 21.728 lpips 0.383 ssim 0.681 rmse 0.110
+2023-12-18 13:30:00,028 - root - INFO - iter [02500/10000] psnr 21.996 lpips 0.358 ssim 0.684 rmse 0.106
+2023-12-18 13:30:00,028 - root - INFO - iter [03000/10000] psnr 21.968 lpips 0.351 ssim 0.689 rmse 0.107
+2023-12-18 13:30:00,028 - root - INFO - iter [03500/10000] psnr 21.932 lpips 0.348 ssim 0.687 rmse 0.111
+2023-12-18 13:30:00,029 - root - INFO - iter [04000/10000] psnr 22.120 lpips 0.339 ssim 0.689 rmse 0.112
+2023-12-18 13:30:00,029 - root - INFO - iter [04500/10000] psnr 21.849 lpips 0.331 ssim 0.692 rmse 0.114
+2023-12-18 13:30:00,029 - root - INFO - iter [05000/10000] psnr 22.046 lpips 0.329 ssim 0.695 rmse 0.119
+2023-12-18 13:30:00,029 - root - INFO - iter [05500/10000] psnr 21.992 lpips 0.328 ssim 0.692 rmse 0.122
+2023-12-18 13:30:00,029 - root - INFO - iter [06000/10000] psnr 21.912 lpips 0.325 ssim 0.693 rmse 0.127
+2023-12-18 13:30:00,029 - root - INFO - iter [06500/10000] psnr 21.915 lpips 0.322 ssim 0.693 rmse 0.131
+2023-12-18 13:30:00,029 - root - INFO - iter [07000/10000] psnr 21.834 lpips 0.320 ssim 0.696 rmse 0.134
+2023-12-18 13:30:00,029 - root - INFO - iter [07500/10000] psnr 21.732 lpips 0.319 ssim 0.696 rmse 0.136
+2023-12-18 13:30:00,029 - root - INFO - iter [08000/10000] psnr 21.755 lpips 0.323 ssim 0.695 rmse 0.139
+2023-12-18 13:30:00,029 - root - INFO - iter [08500/10000] psnr 21.697 lpips 0.318 ssim 0.696 rmse 0.141
+2023-12-18 13:30:00,029 - root - INFO - iter [09000/10000] psnr 21.580 lpips 0.320 ssim 0.694 rmse 0.145
+2023-12-18 13:30:00,029 - root - INFO - iter [09500/10000] psnr 21.609 lpips 0.318 ssim 0.692 rmse 0.146
+2023-12-18 13:30:00,029 - root - INFO - iter [10000/10000] psnr 21.432 lpips 0.319 ssim 0.692 rmse 0.152
