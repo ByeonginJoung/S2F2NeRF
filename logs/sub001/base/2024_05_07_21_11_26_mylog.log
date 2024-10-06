@@ -1,0 +1,36 @@
+2024-05-07 21:11:26,402 - root - INFO - dataset_dir: /ssd1tb_00/byeonginjoung/dataset
+2024-05-07 21:11:26,402 - root - INFO - name_scene: sub001
+2024-05-07 21:11:26,402 - root - INFO - scene_sizes: [[-0.8, 0.8], [-0.8, 0.8], [-0.2, 0.2]]
+2024-05-07 21:11:26,402 - root - INFO - voxel_sizes: [0.01, 0.01, 0.01]
+2024-05-07 21:11:26,402 - root - INFO - sdf_feature_dim: [8, 4, 4, 4]
+2024-05-07 21:11:26,402 - root - INFO - rgb_feature_dim: [12, 4, 4, 4]
+2024-05-07 21:11:26,402 - root - INFO - near: 0.1
+2024-05-07 21:11:26,402 - root - INFO - far: 8.0
+2024-05-07 21:11:26,402 - root - INFO - batch_size: 4096
+2024-05-07 21:11:26,402 - root - INFO - seed: 1234
+2024-05-07 21:11:26,402 - root - INFO - iterations: 10000
+2024-05-07 21:11:26,402 - root - INFO - iter_print: 100
+2024-05-07 21:11:26,403 - root - INFO - iter_viz: 500
+2024-05-07 21:11:26,403 - root - INFO - iter_eval: 500
+2024-05-07 21:11:26,403 - root - INFO - iter_save: 11000
+2024-05-07 21:11:26,403 - root - INFO - lr: {'decoder': 0.001, 'features': 0.01, 'inv_s': 0.001}
+2024-05-07 21:11:26,403 - root - INFO - rendering: {'H': 468, 'W': 624, 'flip_x': False, 'flip_y': False, 'inverse_y': False}
+2024-05-07 21:11:26,403 - root - INFO - crop: 0
+2024-05-07 21:11:26,403 - root - INFO - geometry: {'W': 128, 'D': 1, 'skips': [], 'n_freq': 4}
+2024-05-07 21:11:26,403 - root - INFO - radiance: {'W': 256, 'D': 1, 'skips': [], 'n_freq': 4}
+2024-05-07 21:11:26,403 - root - INFO - color_weight: 1.0
+2024-05-07 21:11:26,403 - root - INFO - depth_weight: 0.12
+2024-05-07 21:11:26,403 - root - INFO - normal_weight: 0.1
+2024-05-07 21:11:26,403 - root - INFO - asdf_weight: 0.2
+2024-05-07 21:11:26,403 - root - INFO - eikonal_weight: 0.15
+2024-05-07 21:11:26,403 - root - INFO - use_eikonal_only: False
+2024-05-07 21:11:26,403 - root - INFO - asdf_loss: {'growing_trunc_init_val': 8, 'growing_trunc_last_iter': 150, 'growing_trunc_last_val': 0.02}
+2024-05-07 21:11:26,403 - root - INFO - n_samples: 128
+2024-05-07 21:11:26,403 - root - INFO - n_importance: 64
+2024-05-07 21:11:26,403 - root - INFO - n_importance_step_size: 16
+2024-05-07 21:11:26,403 - root - INFO - inv_s: 0.3
+2024-05-07 21:11:26,403 - root - INFO - name_log: base
+2024-05-07 21:11:26,403 - root - INFO - dataset: mri
+2024-05-07 21:11:26,403 - root - INFO - data_path: /ssd1tb_00/byeonginjoung/dataset/sub001
+2024-05-07 21:11:26,403 - root - INFO - start_iter: 0
+2024-05-07 21:11:26,403 - root - INFO - log_dir: logs/sub001/base
